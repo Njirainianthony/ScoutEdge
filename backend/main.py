@@ -3,8 +3,11 @@ import pickle #this is just used to load the trained model here
 import pandas as pd
 import unicodedata #this one is used to clean the names, removing those accents so that the similarity search works properly
 import difflib #this one is used to find the closest matching name
+import os
 
 app = FastAPI(title = "ScoutEdge", description = "Soccer player similarity search engine")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 #Here is where i load my model artifacts
 with open ("model_artifacts_outfield.pkl", "rb") as f:
