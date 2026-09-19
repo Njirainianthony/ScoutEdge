@@ -6,7 +6,7 @@ st.set_page_config(page_title="ScoutEdge", page_icon="⚽", layout="wide")
 st.title("ScoutEdge ⚽: Your AI Powered Scouting Engine")
 st.markdown("Find the best young players for your team!")
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://scoutedge-91u0.onrender.com"
 
 st.sidebar.header("About")
 st.sidebar.info("ScoutEdge is a web application that helps football clubs find the best young players for their teams.")
