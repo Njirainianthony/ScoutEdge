@@ -10,11 +10,11 @@ app = FastAPI(title = "ScoutEdge", description = "Soccer player similarity searc
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 #Here is where i load my model artifacts
-with open ("model_artifacts_outfield.pkl", "rb") as f:
+with open (os.path.join(BASE_DIR, "model_artifacts_outfield.pkl"), "rb") as f:
     outfield_model = pickle.load(f)
 
 
-with open("gk_model_artifacts.pkl", "rb") as f:
+with open(os.path.join(BASE_DIR, "gk_model_artifacts.pkl"), "rb") as f:
     gk_model = pickle.load(f)
 
 
